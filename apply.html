@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Application – UMIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #eef2ff, #f8f9fa);
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      color: white;
+    }
+
+    header h3 {
+      font-weight: 600;
+    }
+
+    /* Card */
+    .card {
+      border-radius: 16px;
+      border: none;
+    }
+
+    .card-body {
+      padding: 2.5rem;
+    }
+
+    /* Form */
+    .form-label {
+      font-weight: 500;
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+    }
+
+    /* Submit Button */
+    .btn-primary {
+      padding: 12px;
+      font-size: 1.05rem;
+      font-weight: 500;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    /* Small animation */
+    .card {
+      animation: fadeUp 0.6s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="p-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h3 class="m-0">UMIT Events</h3>
+    <button class="btn btn-light btn-sm" onclick="history.back()">← Back</button>
+  </div>
+</header>
+
+<!-- Form -->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-7">
+
+      <div class="card shadow-lg">
+        <div class="card-body">
+
+          <h4 class="mb-2 fw-bold">Event Application Form</h4>
+          <p class="text-muted mb-4">
+            Fill in the details below to apply for your chosen event.
+          </p>
+
+          <form id="eventForm">
+
+            <!-- Name -->
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- College -->
+            <div class="mb-3">
+              <label class="form-label">College Name</label>
+              <input type="text" class="form-control" placeholder="Enter your college name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="example@email.com" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-3">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" placeholder="Enter phone number" required>
+            </div>
+
+            <!-- Event -->
+            <div class="mb-3">
+              <label class="form-label">Select Event</label>
+              <select class="form-select" required>
+                <option value="">Choose an event</option>
+                <option>Solo Dance Battle</option>
+                <option>Group Dance</option>
+                <option>Singing</option>
+                <option>Drama</option>
+                <option>Mono Act</option>
+              </select>
+            </div>
+
+            <!-- Notes -->
+            <div class="mb-4">
+              <label class="form-label">Additional Notes (optional)</label>
+              <textarea class="form-control" rows="3" placeholder="Any special requirements or notes"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary w-100">
+              Submit Application
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Frontend-only submit -->
+<script>
+  document.getElementById("eventForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Application submitted successfully! 🎉\nOur team will contact you soon.");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>

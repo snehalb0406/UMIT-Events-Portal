@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Details – UMIT Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>UMIT</h1>
+    <button onclick="history.back()">← Back</button>
+  </header>
+
+  <!-- Event Banner -->
+  <div class="event-banner">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Event Banner">
+  </div>
+
+  <!-- Event Header -->
+  <section class="event-header">
+    <h2>Tech Fest 2K26</h2>
+
+    <div class="tags">
+      <span class="badge">CSI</span>
+      <span class="chip active">Technical</span>
+    </div>
+  </section>
+
+  <!-- Event Meta Info -->
+  <section class="event-meta">
+    <p>📍 <strong>Venue:</strong> UMIT Main Auditorium</p>
+    <p>🕒 <strong>Date & Time:</strong> Mar 10 – Mar 12 · 10:00 AM onwards</p>
+    <p>🎤 <strong>Speaker / Judges:</strong> Industry Experts & Alumni</p>
+  </section>
+
+  <!-- Event Description -->
+  <section class="event-description">
+    <h3>About the Event</h3>
+    <p>
+      Tech Fest 2K26 is UMIT’s flagship technical festival featuring hackathons,
+      workshops, speaker sessions, and competitive coding events. Students from
+      multiple colleges participate to showcase innovation and teamwork.
+    </p>
+  </section>
+
+  <!-- Schedule -->
+  <section class="event-schedule">
+    <h3>Schedule Breakdown</h3>
+    <ul>
+      <li><strong>Day 1:</strong> Inauguration, Speaker Sessions, Ideathon</li>
+      <li><strong>Day 2:</strong> Hackathon, Workshops, Coding Contest</li>
+      <li><strong>Day 3:</strong> Final Presentations, Valedictory Ceremony</li>
+    </ul>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="event-actions">
+    <button class="primary-btn">📅 Add to Calendar</button>
+    <button class="secondary-btn" id="saveBtn">☆ Save for later</button>
+  </section>
+
+  <script>
+    // Save for later toggle
+    const saveBtn = document.getElementById('saveBtn');
+    saveBtn.addEventListener('click', () => {
+      saveBtn.classList.toggle('saved');
+      saveBtn.textContent = saveBtn.classList.contains('saved')
+        ? '★ Saved'
+        : '☆ Save for later';
+    });
+  </script>
+
+</body>
+</html>

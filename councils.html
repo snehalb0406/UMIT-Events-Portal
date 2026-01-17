@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMIT Councils</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .council-card img {
+      height: 160px;
+      object-fit: contain;
+      padding: 1rem;
+    }
+    .council-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .council-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="d-flex align-items-center px-4 py-3 bg-light border-bottom">
+  <img
+    src="https://sndt.ac.in/sites/default/files/SNDT-LOGO-blue-300dp-2016.png"
+    alt="SNDT Logo"
+    style="height: 45px; margin-right: 14px;"
+  />
+  <h1 class="m-0 fw-semibold">UMIT Councils</h1>
+
+  <div class="flex-grow-1"></div>
+
+  <a href="index.html" class="btn btn-outline-dark btn-sm">← Back</a>
+</header>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+  <h2 class="fw-bold mb-2">Student Councils</h2>
+  <p class="text-muted mb-4">
+    Explore the technical and innovation-driven councils at UMIT.
+  </p>
+
+  <div class="row g-4">
+
+    <!-- GFG -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card council-card h-100 shadow-sm">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg" class="card-img-top" alt="GFG">
+        <div class="card-body">
+          <h5 class="card-title">GeeksforGeeks (GFG)</h5>
+          <p class="card-text">
+            Focuses on Data Structures, Algorithms, Competitive Programming,
+            coding contests, and interview preparation.
+          </p>
+          <ul class="small text-muted">
+            <li>DSA Workshops</li>
+            <li>Coding Contests</li>
+            <li>Placement Prep</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+
+   
+    <!-- IIC -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card council-card h-100 shadow-sm">
+        <img src="https://iic.mic.gov.in/assets/images/logo.png" class="card-img-top" alt="IIC">
+        <div class="card-body">
+          <h5 class="card-title">Institution’s Innovation Council (IIC)</h5>
+          <p class="card-text">
+            Fosters innovation, startups, entrepreneurship,
+            and idea incubation among students.
+          </p>
+          <ul class="small text-muted">
+            <li>Startup Bootcamps</li>
+            <li>Ideathons</li>
+            <li>Innovation Challenges</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

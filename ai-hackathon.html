@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hackathon – UMIT Events</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="p-3 border-bottom">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h2 class="m-0">UMIT</h2>
+    <button class="btn btn-outline-secondary" onclick="history.back()">← Back</button>
+  </div>
+</header>
+
+<!-- Event Banner -->
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+     class="img-fluid w-100"
+     style="max-height: 300px; object-fit: cover;">
+
+<!-- Event Details -->
+<div class="container my-5">
+
+  <h2 class="fw-bold">AI Hackathon</h2>
+  <span class="badge bg-primary mb-3">Technical Event</span>
+
+  <p class="mt-3">
+    Step into the world of innovation and problem-solving at the <strong>AI Hackathon</strong>,
+    a 24-hour nonstop challenge where participants build intelligent, real-world solutions
+    using Artificial Intelligence, Machine Learning, and data-driven technologies.
+  </p>
+
+  <!-- Info Section -->
+  <div class="row my-4">
+    <div class="col-md-6">
+      <p>📅 <strong>Date:</strong> January 20</p>
+      <p>🕒 <strong>Time:</strong> 10:00 AM onwards (24 Hours)</p>
+      <p>📍 <strong>Venue:</strong> Computer Labs / Innovation Hall</p>
+    </div>
+    <div class="col-md-6">
+      <p>👥 <strong>Team Size:</strong> 2 – 4 members</p>
+      <p>💻 <strong>Mode:</strong> On-site Hackathon</p>
+      <p>💰 <strong>Entry Fee:</strong> ₹200 per team</p>
+    </div>
+  </div>
+
+  <!-- Problem Statement -->
+  <h4 class="mt-4">Problem Statement</h4>
+  <p>
+    Participants will be given real-world problem statements related to healthcare,
+    education, sustainability, finance, or smart systems. Teams must analyze the problem,
+    design an AI-based solution, and build a working prototype within 24 hours.
+  </p>
+
+  <!-- Rules -->
+  <h4 class="mt-4">Rules & Evaluation Criteria</h4>
+  <ul>
+    <li>All development must be done during the hackathon duration.</li>
+    <li>Use of open-source libraries and APIs is allowed.</li>
+    <li>Internet access will be provided.</li>
+    <li>Judging will be based on innovation, technical depth, feasibility, and impact.</li>
+  </ul>
+
+  <!-- Prize -->
+  <h4 class="mt-4">🏆 Prizes</h4>
+  <p>
+    🥇 1st Prize: ₹10,000 + Trophy<br>
+    🥈 2nd Prize: ₹5,000 + Certificates<br>
+    🎖 Participation Certificates for all teams
+  </p>
+
+  <hr class="my-5">
+
+  <!-- Submission Form -->
+  <h3 class="mb-3">Apply for AI Hackathon</h3>
+
+  <form id="hackathonForm" class="row g-3">
+
+    <div class="col-md-6">
+      <label class="form-label">Team Name</label>
+      <input type="text" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">College Name</label>
+      <input type="text" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Team Leader Email</label>
+      <input type="email" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Team Leader Phone</label>
+      <input type="tel" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Number of Team Members</label>
+      <select class="form-select" required>
+        <option value="">Select</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Problem Domain</label>
+      <select class="form-select" required>
+        <option value="">Select</option>
+        <option>Healthcare</option>
+        <option>Education</option>
+        <option>Sustainability</option>
+        <option>Finance</option>
+        <option>Smart Systems</option>
+        <option>Open Innovation</option>
+      </select>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Brief Idea Description</label>
+      <textarea class="form-control" rows="3" required></textarea>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary px-4">
+        Submit Application
+      </button>
+    </div>
+
+  </form>
+
+</div>
+
+<!-- Fake submit handling -->
+<script>
+  document.getElementById('hackathonForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert("AI Hackathon application submitted successfully! 🚀");
+    this.reset();
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

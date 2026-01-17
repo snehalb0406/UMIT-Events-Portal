@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMIT Events – Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="d-flex align-items-center px-4 py-3 bg-light border-bottom">
+
+  <!-- Left: SNDT Logo -->
+  <img
+    src="https://sndt.ac.in/sites/default/files/SNDT-LOGO-blue-300dp-2016.png"
+    alt="SNDT Logo"
+    style="height: 48px; width: auto; margin-right: 14px;"
+  />
+
+  <!-- UMIT Title -->
+  <h1 style="font-size: 2rem; margin: 0; font-weight: 600;">
+    UMIT
+  </h1>
+
+  <!-- Spacer -->
+  <div class="flex-grow-1"></div>
+
+  <!-- Search -->
+  <form class="d-flex search" role="search" style="max-width: 400px;">
+    <input
+      class="form-control me-2"
+      id="searchInput"
+      type="search"
+      placeholder="Search events"
+      aria-label="Search"
+    />
+    <button class="btn btn-dark" type="button">
+      Search
+    </button>
+  </form>
+
+</header>
+
+  <!-- Categories -->
+  <div class="categories" id="categories">
+    <div class="chip active" data-filter="all">All</div>
+    <div class="chip" data-filter="technical">Technical</div>
+    <div class="chip" data-filter="cultural">Cultural</div>
+    <div class="chip" data-filter="sports">Sports</div>
+    
+
+  </div>
+
+ <section class="welcome"><h1>Welcome to campus events of UMIT!! </h1> </section>
+
+  <!-- Upcoming Events -->
+  <section>
+    <h2>Upcoming Events</h2><br>
+
+    <h2 class="mt-5 mb-4">
+  <a href="arcanes.html" class="text-dark text-decoration-none">
+    <b>Arcanes 2K26- Student Council</b>
+  </a>
+</h2>
+
+<div class="d-flex flex-wrap gap-4">
+<!-- solo dance -->
+    <div class="card event-card" data-category="cultural" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1615794239747-49e7d398a930?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title"><b>Solo Dance Battle</b></h5>
+    <p class="card-text">Step into the spotlight and let your moves speak louder than words! </p>
+  </div>
+</div>
+<!-- Group dance -->
+<div class="card event-card" data-category="cultural" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1633338718293-785082123de7?q=80&w=790&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" style="height: 12rem ">
+  <div class="card-body">
+    <h5 class="card-title"><b>Group Dance</b></h5>
+    <p class="card-text">Synchronize your rhythm and energy to light up the stage together.</p>
+  </div>
+</div>
+<!-- Singing -->
+<div class="card event-card" data-category="cultural" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1761901219072-491a18f3ccd7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title"><b>Singing</b></h5>
+    <p class="card-text">Let your voice create magic and connect hearts through music.</p>
+  </div>
+</div>
+<!-- drama -->
+ <div class="card event-card" data-category="cultural" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1576724196706-3f23f51ea351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title"><b>Drama</b></h5>
+    <p class="card-text">Bring stories to life with powerful expressions and emotions.</p>
+  </div>
+</div>
+<!-- monoact -->
+ <div class="card event-card" data-category="cultural" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1610964199131-5e29387e6267?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title"><b>Mono Act</b></h5>
+    <p class="card-text">One performer, many emotions — captivate the audience solo.</p>
+  </div>
+</div>
+<!-- standup -->
+ <div class="card event-card" data-category="cultural" style="width: 18rem;">
+  <img src="https://media.istockphoto.com/id/2232897744/photo/man-performing-on-stage-with-microphone-and-open-arms.webp?a=1&b=1&s=612x612&w=0&k=20&c=4-2qLt-IlHb0w8TWs18mZd2lnCUNf52sXHvr9pkLOvs=" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title"><b>Stand-Up Comedy</b></h5>
+    <p class="card-text">Tickle funny bones and leave the audience laughing out loud.</p>
+  </div>
+</div>
+<!-- instrumental -->
+ <div class="card event-card" data-category="cultural" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title"><b>Instrumental Music</b></h5>
+    <p class="card-text">Express emotions through melodies without uttering a word.</p>
+  </div>
+</div>
+</div><hr>
+
+<h2 class="mt-5 mb-4">
+  <a href="techfest.html" class="text-dark text-decoration-none">
+    <b>TechFest Events- Tech Councils</b>
+  </a>
+</h2>
+<div class="d-flex flex-wrap gap-4">
+
+  <!-- Hackathon -->
+  <div class="card event-card" data-category="technical" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Hackathon</b></h5>
+      <p class="card-text">Build innovative solutions, code nonstop, and compete with the best minds.</p>
+    </div>
+  </div>
+
+  <!-- Coding Contest -->
+  <div class="card event-card" data-category="technical" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Coding Contest</b></h5>
+      <p class="card-text">Test your problem-solving skills under time pressure.</p>
+    </div>
+  </div>
+
+  <!-- Robotics -->
+  <div class="card event-card" data-category="technical" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Robotics Challenge</b></h5>
+      <p class="card-text">Design, build, and battle robots in exciting challenges.</p>
+    </div>
+  </div>
+
+  <!-- AI / ML Workshop -->
+  <div class="card event-card" data-category="technical" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>AI / ML Workshop</b></h5>
+      <p class="card-text">Learn how machines think and build intelligent applications.</p>
+    </div>
+  </div>
+
+  <!-- Cyber Security -->
+  <div class="card event-card" data-category="technical" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Cyber Security</b></h5>
+      <p class="card-text">Explore ethical hacking, security threats, and defense strategies.</p>
+    </div>
+  </div>
+
+  <!-- Tech Quiz -->
+  <div class="card event-card" data-category="technical" style="width: 18rem;">
+    <img src="https://plus.unsplash.com/premium_photo-1733266880122-1e9a03068ab1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGVjaCUyMHF1aXp8ZW58MHx8MHx8fDA%3D" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Tech Quiz</b></h5>
+      <p class="card-text">Challenge your technical knowledge across multiple domains.</p>
+    </div>
+  </div>
+</div><hr>
+<h2 class="mt-5 mb-4"><b>Sports Events- Sports Council</b></h2>
+
+<div class="d-flex flex-wrap gap-4">
+
+  <!-- Football -->
+  <div class="card event-card" data-category="sports" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vdGJhbGx8ZW58MHx8MHx8fDA%3D" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Football Tournament</b></h5>
+      <p class="card-text">Show your teamwork, stamina, and skills on the football field.</p>
+    </div>
+  </div>
+
+  <!-- Cricket -->
+  <div class="card event-card" data-category="sports" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3JpY2tldHxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Cricket League</b></h5>
+      <p class="card-text">Battle it out with bat and ball in this thrilling cricket league.</p>
+    </div>
+  </div>
+
+  <!-- Basketball -->
+  <div class="card event-card" data-category="sports" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Basketball</b></h5>
+      <p class="card-text">Fast-paced action, quick passes, and slam dunks await.</p>
+    </div>
+  </div>
+
+  <!-- Badminton -->
+  <div class="card event-card" data-category="sports" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Badminton</b></h5>
+      <p class="card-text">Quick reflexes and precision shots decide the winner.</p>
+    </div>
+  </div>
+
+  <!-- Table Tennis -->
+  <div class="card event-card" data-category="sports" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFibGUlMjB0ZW5uaXN8ZW58MHx8MHx8fDA%3D" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Table Tennis</b></h5>
+      <p class="card-text">Spin, speed, and strategy on the table tennis court.</p>
+    </div>
+  </div>
+
+  <!-- Chess -->
+  <div class="card event-card" data-category="sports" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1523875194681-bedd468c58bf" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title"><b>Chess Tournament</b></h5>
+      <p class="card-text">Test your strategy and foresight in the game of minds.</p>
+    </div>
+  </div>
+</div>
+  </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".event-card");
+    const chips = document.querySelectorAll(".chip");
+
+    let activeCategory = "all";
+
+    function filterCards() {
+      const searchText = searchInput.value.toLowerCase();
+
+      cards.forEach(card => {
+        const matchesSearch = card.textContent.toLowerCase().includes(searchText);
+        const matchesCategory =
+          activeCategory === "all" ||
+          card.dataset.category === activeCategory;
+
+        card.style.display = matchesSearch && matchesCategory
+          ? "block"
+          : "none";
+      });
+    }
+
+    // Search input
+    searchInput.addEventListener("input", filterCards);
+
+    // Category chips
+    chips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        chips.forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+
+        activeCategory = chip.dataset.filter;
+        filterCards();
+      });
+    });
+  });
+</script>
+
+
+
+
+</body>
+</html>
